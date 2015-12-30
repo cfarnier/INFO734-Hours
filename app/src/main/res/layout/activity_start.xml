@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/colorPrimary"
+    tools:context=".StartActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="@color/colorAccent"
+        android:textStyle="bold" android:textSize="50sp" android:gravity="center"
+        android:text="H&apos;Ours" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2015 © FARNIER Clément"
+            android:id="@+id/copyright"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textColor="@color/colorAccent" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp" />
+
+    </FrameLayout>
+
+</FrameLayout>
